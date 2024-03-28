@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="w-1/6 container mx-auto mt-5">
+      <div class="display bg-blue-950 h-20" id="display">
+        <p id="math" class="text-white"></p>
+      </div>
+      <div class="digits grid grid-cols-4 gap-1 text-center mt-1">
+        <div class="p-4 text-white bg-yellow-500" id="C">C</div>
+        <div class="p-4 text-white bg-yellow-500" id="back">BACK</div>
+        <div class="p-4 text-white bg-yellow-500" id="division">/</div>
+        <div class="p-4 text-white bg-yellow-500" id="multiply">x</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="one">1</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="two">2</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="three">3</div>
+        <div class="p-4 text-white bg-yellow-500" id="minus">-</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="four">4</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="five">5</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="six">6</div>
+        <div class="p-4 text-white bg-yellow-500" id="plus">+</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="seven">7</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="eight">8</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="nine">9</div>
+        <div class="p-4 text-white bg-green-800 row-span-2" id="equal">=</div>
+        <div class="p-4 text-slate-300 bg-blue-950 col-span-2" id="zero">0</div>
+        <div class="p-4 text-slate-300 bg-blue-950" id="decimal">.</div>
+      </div>
+    </section>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
